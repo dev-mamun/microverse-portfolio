@@ -35,17 +35,9 @@
 
 > This project built with html & css.
 
-<details>
-  <summary>HTML</summary>
-</details>
-
-<details>
-  <summary>CSS</summary>
-</details>
-
-<details>
-  <summary>Flexbox</summary>
-</details>
+- HTML
+- CSS
+- Flexbox
 
 <!-- Features -->
 
