@@ -122,7 +122,7 @@ main {
 .intro {
   height: 670px;
   text-align: center !important;
-  background: url("/assets/img/header-illsutration-mobile.svg") no-repeat;
+  background: url("/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
   background-size: 375.38px 648px;
   background-position: -13.88px -10.38px;
   padding-top: 6px;
