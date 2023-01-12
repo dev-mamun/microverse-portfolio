@@ -136,8 +136,9 @@ main {
   margin-bottom: 40px;
 }
 
-.intro-heading p:nth-child(1) {
+.intro-heading > h1 {
   margin-bottom: 5px;
+  font-size: 30px !important;
 }
 
 .intro-heading p:nth-child(2) {
