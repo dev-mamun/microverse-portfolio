@@ -129,7 +129,6 @@ main {
 }
 
 .intro-heading {
-  width: 330px;
   height: auto;
   font-weight: 700;
   font-size: 35px;
@@ -149,7 +148,6 @@ main {
 }
 
 .intro-text {
-  width: 330px;
   height: auto;
   color: #172b4d;
   font-style: normal;
