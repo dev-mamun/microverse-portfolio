@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import "color.css";
-@import "screen.css";
+
 
 body {
   margin: 0;
@@ -183,3 +183,6 @@ main {
   width: 19.99px;
   height: 19.99px;
 }
+
+
+@import "screen.css";
