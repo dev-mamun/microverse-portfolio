@@ -14,11 +14,12 @@
         - [Tech Stack](#tech-stack)
     - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-    - [Setup](#setup)
     - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -60,22 +61,22 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li>Html & CSS</li>
-    <li><a href="https://github.com/microverseinc/linters-config/tree/master/html-css">Linter</a></li>
-  </ul>
-</details>
+- GIT 
+  - if you don't have git installed on your machine you can download it from [here](https://git-scm.com/downloads).
+- Linter
+  - You can get install guide from <a href="https://github.com/microverseinc/linters-config/tree/master/html-css">here</a>
+- Node.js & Npm
+  - if you don't have npm installed on your machine you can download it from [here](https://nodejs.org/en/)
+
 
 ### Setup
-
-Clone this repository to your desired folder:
+Once you have git installed on your machine you can clone project by running the command below.
+To clone your project to your local machine
 
 ```sh
   git clone git@github.com:dev-mamun/microverse-portfolio.git
 ```
-
+Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your project page and clicking on `Download ZIP`
 
 ### Install
 
@@ -83,6 +84,11 @@ Install this project with:
 
 ```sh
   cd microverse-portfolio
+```
+
+For this project, you don't need to install any dependencies but if you prefer to install any dev dependencies run:
+```
+  npm install
   npm init -y
   npm install --save-dev hint@7.x
   npx hint .
@@ -93,20 +99,34 @@ Install this project with:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, use the following :
 - VSCode use [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+
+Alternative: Locate the folder where you cloned your project and open the `index.html` file in your browser to view your project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Abdullah AL mamun**
 
 - GitHub: [@dev-mamun](https://github.com/dev-mamun)
 - Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
 - LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Will add following features on future.
+
+- [ ] **[Menu]**
+- [ ] **[Recent Work]**
+- [ ] **[Project Details]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
