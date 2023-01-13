@@ -150,7 +150,8 @@ h2 {
 
 .intro-heading > h1 {
   margin-bottom: 5px;
-  font-size: 35px !important;
+  font-size: 32px !important;
+  font-weight: 900;
 }
 
 .intro-heading p:nth-child(2) {
