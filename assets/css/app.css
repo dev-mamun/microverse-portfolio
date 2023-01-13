@@ -101,7 +101,7 @@ main {
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  background-image: url("/microverse-portfolio/assets/img/icon/menu.png");
+  background-image: url("/assets/img/icon/menu.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -121,7 +121,7 @@ main {
 .intro {
   height: 670px;
   text-align: center !important;
-  background: url("/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
+  background: url("/assets/img/header-illsutration-mobile.svg") no-repeat;
   background-size: 375.38px 648px;
   background-position: -13.88px -10.38px;
   padding-top: 6px;
@@ -183,5 +183,3 @@ main {
   width: 19.99px;
   height: 19.99px;
 }
-
-@import "screen.css";

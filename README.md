@@ -12,12 +12,14 @@
 - [📖 About the Project](#about-project)
     - [🛠 Built With](#built-with)
         - [Tech Stack](#tech-stack)
+        - [Key Features](#key-features)
     - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Author](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -43,6 +45,14 @@
 - Flexbox
 
 <!-- Features -->
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- [ ] Headr with hamburger
+- [ ] Multiple color in intro
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
@@ -122,9 +132,9 @@ Alternative: Locate the folder where you cloned your project and open the `index
 
 > Will add following features on future.
 
-- [ ] **[Menu]**
-- [ ] **[Recent Work]**
-- [ ] **[Project Details]**
+- [ ] **Menu**
+- [ ] **Recent Work**
+- [ ] **Project Details**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
