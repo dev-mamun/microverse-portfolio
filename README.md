@@ -43,14 +43,18 @@
 - HTML
 - CSS
 - Flexbox
+- CSS Grid
 
 <!-- Features -->
+
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
 - [ ] Headr with hamburger
 - [ ] Multiple color in intro
+- [ ] Work List
+- [ ] About Section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,22 +75,26 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-- GIT 
-  - if you don't have git installed on your machine you can download it from [here](https://git-scm.com/downloads).
-- Linter
-  - You can get install guide from <a href="https://github.com/microverseinc/linters-config/tree/master/html-css">here</a>
-- Node.js & Npm
-  - if you don't have npm installed on your machine you can download it from [here](https://nodejs.org/en/)
 
+- GIT
+    - if you don't have git installed on your machine you can download it from [here](https://git-scm.com/downloads).
+- Linter
+    - You can get install guide from <a href="https://github.com/microverseinc/linters-config/tree/master/html-css">
+      here</a>
+- Node.js & Npm
+    - if you don't have npm installed on your machine you can download it from [here](https://nodejs.org/en/)
 
 ### Setup
+
 Once you have git installed on your machine you can clone project by running the command below.
 To clone your project to your local machine
 
 ```sh
   git clone git@github.com:dev-mamun/microverse-portfolio.git
 ```
-Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your project page and clicking on `Download ZIP`
+
+Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your
+project page and clicking on `Download ZIP`
 
 ### Install
 
@@ -97,6 +105,7 @@ Install this project with:
 ```
 
 For this project, you don't need to install any dependencies but if you prefer to install any dev dependencies run:
+
 ```
   npm install
   npm init -y
@@ -106,13 +115,14 @@ For this project, you don't need to install any dependencies but if you prefer t
 
 ```
 
-
 ### Usage
 
 To run the project, use the following :
+
 - VSCode use [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
 
-Alternative: Locate the folder where you cloned your project and open the `index.html` file in your browser to view your project.
+Alternative: Locate the folder where you cloned your project and open the `index.html` file in your browser to view your
+project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +143,7 @@ Alternative: Locate the folder where you cloned your project and open the `index
 > Will add following features on future.
 
 - [ ] **Menu**
-- [ ] **Recent Work**
+- [ ] **Contact Form**
 - [ ] **Project Details**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
