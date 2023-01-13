@@ -1,0 +1,41 @@
+/**
+ * Project: portfolio
+ * File: screen.css
+ * Created: 1/12/23
+ * Author: Abdullah Al Mamun <mamun1214@gmail.com>
+ */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    max-width: 360px;
+  }
+}
