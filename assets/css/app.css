@@ -241,9 +241,13 @@ a {
 
 .c-btn:hover {
   color: #fff;
-  border-color: #ff521b;
-  background: #3b1cc4 !important;
-  font-size: 30px;
+  border-color: #36B37F;
+  background: #36B37F !important;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.c-btn:active {
+  background-color: #008552;
 }
 
 .c-btn:hover::before {
