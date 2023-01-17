@@ -222,7 +222,7 @@ a {
   padding: 0.6em 1.6rem;
   position: relative;
   transition: 0.2s all;
-  background: #36b37f;
+  background-color: #36b37f;
   border-radius: 6px;
   font-size: 21px;
 }
@@ -242,6 +242,8 @@ a {
 .c-btn:hover {
   color: #fff;
   border-color: #ff521b;
+  background: #3b1cc4 !important;
+  font-size: 30px;
 }
 
 .c-btn:hover::before {
@@ -249,7 +251,7 @@ a {
 }
 
 .c-posts {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   align-items: top;
   padding: 5%;
