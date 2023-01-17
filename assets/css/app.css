@@ -241,9 +241,9 @@ a {
 
 .c-btn:hover {
   color: #fff;
-  border-color: #36B37F;
-  background: #36B37F !important;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  border-color: #36b37f;
+  background: #36b37f !important;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .c-btn:active {
