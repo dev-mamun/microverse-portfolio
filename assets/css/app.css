@@ -150,7 +150,8 @@ h2 {
 
 .intro-heading > h1 {
   margin-bottom: 5px;
-  font-size: 35px !important;
+  font-size: 32px !important;
+  font-weight: 900;
 }
 
 .intro-heading p:nth-child(2) {
@@ -221,7 +222,7 @@ a {
   padding: 0.6em 1.6rem;
   position: relative;
   transition: 0.2s all;
-  background: #36b37f;
+  background-color: #36b37f;
   border-radius: 6px;
   font-size: 21px;
 }
@@ -240,7 +241,13 @@ a {
 
 .c-btn:hover {
   color: #fff;
-  border-color: #ff521b;
+  border-color: #36b37f;
+  background: #36b37f !important;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.c-btn:active {
+  background-color: #008552;
 }
 
 .c-btn:hover::before {
@@ -248,7 +255,7 @@ a {
 }
 
 .c-posts {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   align-items: top;
   padding: 5%;
