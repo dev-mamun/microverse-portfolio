@@ -296,12 +296,14 @@ a {
 }
 
 .card-wrapper .tech-tags ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
   padding-left: 0;
   text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* flex-wrap: wrap;
+  justify-content: center; */
+  height: 32px;
+  width: auto;
 }
 
 .card-wrapper .tech-tags li {
@@ -310,6 +312,7 @@ a {
   box-sizing: border-box;
   border-radius: 5px;
   background: #ebf0ee;
+  float: left;
 }
 
 .card-wrapper .tech-tags li a {
