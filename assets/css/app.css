@@ -296,14 +296,12 @@ a {
 }
 
 .card-wrapper .tech-tags ul {
-  /* display: flex; */
   list-style: none;
   padding-left: 0;
   text-align: center;
-  /* flex-wrap: wrap;
-  justify-content: center; */
   height: 32px;
   width: auto;
+  margin-left: 19px;
 }
 
 .card-wrapper .tech-tags li {
@@ -313,6 +311,22 @@ a {
   border-radius: 5px;
   background: #ebf0ee;
   float: left;
+}
+
+.card-wrapper .tech-tags li:nth-child(1) {
+  width: 103px;
+}
+
+.card-wrapper .tech-tags li:nth-child(2) {
+  width: 45px;
+}
+
+.card-wrapper .tech-tags li:nth-child(3) {
+  width: 82px;
+}
+
+.card-wrapper .tech-tags li:nth-child(4) {
+  width: 51px;
 }
 
 .card-wrapper .tech-tags li a {
