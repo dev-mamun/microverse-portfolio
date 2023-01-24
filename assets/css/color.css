@@ -4,6 +4,12 @@
  * Created: 1/12/23
  * Author: Abdullah Al Mamun <mamun1214@gmail.com>
  */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 .bg-white {
   opacity: 1;
   background-color: rgba(255, 255, 255, 1) !important;
@@ -14,4 +20,30 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid darkgreen;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+main {
+  background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
+  background-size: 375.38px 602px;
+  background-position: 38.12px 44.62px;
 }

@@ -24,12 +24,6 @@ main {
   display: block;
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 h1 {
   font-size: calc(130% + 1vw);
   font-weight: normal;
@@ -133,9 +127,6 @@ h2 {
 .intro {
   height: 670px;
   text-align: center !important;
-  background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
-  background-size: 375.38px 648px;
-  background-position: -13.88px -10.38px;
   padding-top: 6px;
 }
 
@@ -195,18 +186,6 @@ h2 {
 .social-icon > ul > li img {
   width: 19.99px;
   height: 19.99px;
-}
-
-.mt-0 {
-  margin-top: 0 !important;
-}
-
-.mb-0 {
-  margin-bottom: 0 !important;
-}
-
-.pb-0 {
-  padding-bottom: 0 !important;
 }
 
 .c-btn {
@@ -438,13 +417,13 @@ h2 {
   height: 189px;
 }
 
-/** Start Media query **/
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+#down-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
+/** Start Media query **/
 @media all and (min-width: 600px) {
   .c-posts__item {
     flex-basis: 50%;
@@ -456,9 +435,27 @@ h2 {
   }
 }
 
-@media (min-width: 992px) {
+@media all and (min-width: 768px) {
+  .container {
+    max-width: 870px;
+  }
+
+  main {
+    background: url("/assets/img/Header-llustration-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: -13.88px -10.38px;
+  }
+}
+
+@media all and (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  main {
+    background: url("/assets/img/Header-llustration-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: -13.88px -10.38px;
   }
 }
 
@@ -470,11 +467,11 @@ h2 {
   .c-posts__item:first-child {
     flex-basis: 66%;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+  main {
+    background: url("/assets/img/Header-llustration-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: 73.12px -10.38px;
   }
 }
 
@@ -483,11 +480,25 @@ h2 {
     max-width: 1320px;
   }
 
+  main {
+    background: url("/assets/img/Header-llustration-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: 27.12px -0.38px;
+  }
+
   .c-posts__item {
     flex-basis: 25%;
   }
 
   .c-posts__item:first-child {
     flex-basis: 50%;
+  }
+
+  .navbar-welcome {
+    display: none !important;
+  }
+
+  .navbar-menu {
+    display: none !important;
   }
 }

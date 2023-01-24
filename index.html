@@ -16,19 +16,19 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-<header>
-    <div class="navbar bg-white">
-        <div class="container">
-            <a id="" href="#" class="navbar-welcome d-flex align-center">
-                <strong>Welcome</strong>
-            </a>
-            <nav class="navbar-menu">
-                <span class="navbar-menu-icon"></span>
-            </nav>
-        </div>
-    </div>
-</header>
 <main>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a id="" href="#" class="navbar-welcome d-flex align-center">
+                    <strong>Welcome</strong>
+                </a>
+                <nav class="navbar-menu">
+                    <span class="navbar-menu-icon"></span>
+                </nav>
+            </div>
+        </div>
+    </header>
     <section class="container intro">
         <div class="intro-heading">
             <h1>Hey there. I’m Mamun</h1>
@@ -67,10 +67,10 @@
                 </li>
             </ul>
         </div>
+        <div id="down-arrow">
+            <img src="assets/img/Action.png">
+        </div>
     </section>
-    <div id="down-arrow">
-        <img src="assets/img/Action.png">
-    </div>
 
     <section id="recent-work" class="c-posts">
         <h2 class="section-title">My Recent Works</h2>
@@ -242,9 +242,11 @@
             </h1>
             <form method="post" action="https://formspree.io/f/xpzewgrz">
                 <div class="contact-form">
-                    <input name="name" type="text" value="" placeholder="Full name" minlength="3" maxlength="30" required/>
+                    <input name="name" type="text" value="" placeholder="Full name" minlength="3" maxlength="30"
+                           required/>
                     <input name="email" type="email" value="" placeholder="Email address" minlength="5" required/>
-                    <textarea name="message" rows="4" placeholder="Enter text here" minlength="1" maxlength="500" required></textarea>
+                    <textarea name="message" rows="4" placeholder="Enter text here" minlength="1" maxlength="500"
+                              required></textarea>
                 </div>
                 <button type="submit" class="c-btn">Get in touch</button>
             </form>
