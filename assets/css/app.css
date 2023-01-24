@@ -438,6 +438,13 @@ h2 {
   height: 189px;
 }
 
+/** Start Media query **/
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
 @media all and (min-width: 600px) {
   .c-posts__item {
     flex-basis: 50%;
@@ -446,6 +453,12 @@ h2 {
 
   .c-posts__item:first-child {
     flex-basis: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
 }
 
@@ -459,7 +472,17 @@ h2 {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 @media all and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
   .c-posts__item {
     flex-basis: 25%;
   }
