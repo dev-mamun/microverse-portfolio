@@ -71,7 +71,8 @@
     <div id="down-arrow">
         <img src="assets/img/Action.png">
     </div>
-    <section class="c-posts">
+
+    <section id="recent-work" class="c-posts">
         <h2 class="section-title">My Recent Works</h2>
         <article class="c-posts__item card-wrapper">
             <div class="card-image-wrapper"></div>
@@ -85,7 +86,7 @@
                         <li><a href="#">html</a></li>
                     </ul>
                 </div>
-                <a href="#" class="c-btn">See Project</a>
+                <button type="button" class="c-btn">See Project</button>
             </div>
         </article>
         <article class="c-posts__item card-wrapper">
@@ -100,7 +101,7 @@
                         <li><a href="#">html</a></li>
                     </ul>
                 </div>
-                <a href="#" class="c-btn">See Project</a>
+                <button type="button" class="c-btn">See Project</button>
             </div>
         </article>
         <article class="c-posts__item card-wrapper">
@@ -115,7 +116,7 @@
                         <li><a href="#">html</a></li>
                     </ul>
                 </div>
-                <a href="#" class="c-btn">See Project</a>
+                <button type="button" class="c-btn">See Project</button>
             </div>
         </article>
         <article class="c-posts__item card-wrapper">
@@ -130,7 +131,7 @@
                         <li><a href="#">html</a></li>
                     </ul>
                 </div>
-                <a href="#" class="c-btn">See Project</a>
+                <button type="button" class="c-btn">See Project</button>
             </div>
         </article>
         <article class="c-posts__item card-wrapper">
@@ -145,7 +146,7 @@
                         <li><a href="#">html</a></li>
                     </ul>
                 </div>
-                <a href="#" class="c-btn">See Project</a>
+                <button type="button" class="c-btn">See Project</button>
             </div>
         </article>
         <article class="c-posts__item card-wrapper">
@@ -160,12 +161,12 @@
                         <li><a href="#">html</a></li>
                     </ul>
                 </div>
-                <a href="#" class="c-btn">See Project</a>
+                <button type="button" class="c-btn">See Project</button>
             </div>
         </article>
     </section>
 
-    <section class="c-posts">
+    <section id="about-me" class="c-posts">
         <article class="c-posts__item">
             <h2 class="section-title mb-0">About me</h2>
             <p class="about-text">
@@ -173,7 +174,7 @@
                 like what you see and have a project you need coded,
                 don’t hestiate to contact me.
             </p>
-            <a href="#" class="c-btn">Get My Resume</a>
+            <button type="button" class="c-btn">Get My Resume</button>
         </article>
         <article class="c-posts__item card-wrapper skill-main-wrapper">
             <div class="skill-image-wrapper">
@@ -232,6 +233,58 @@
             </div>
         </article>
     </section>
+
+    <section id="contact-frm" class="c-posts">
+        <article class="c-posts__item pb-0">
+            <h1 class="section-title mt-0">
+                I'm always interested in hearing about new projects, so if you'd like
+                to chat please get in touch.
+            </h1>
+            <form method="post" action="https://formspree.io/f/xpzewgrz">
+                <div class="contact-form">
+                    <input name="name" type="text" value="" placeholder="Full name" minlength="3" maxlength="30" required/>
+                    <input name="email" type="email" value="" placeholder="Email address" minlength="5" required/>
+                    <textarea name="message" rows="4" placeholder="Enter text here" minlength="1" maxlength="500" required></textarea>
+                </div>
+                <button type="submit" class="c-btn">Get in touch</button>
+            </form>
+        </article>
+    </section>
+
+    <footer class="c-footer">
+        <div class="social-icon">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/CoderKnight">
+                        <img class="icon" src="./assets/img/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/dev-mamun/">
+                        <img class="icon" src="./assets/img/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./assets/img/medium.svg" alt="Medium">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/dev-mamun">
+                        <img class="icon" src="./assets/img/github.svg" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="./assets/img/angellist.svg" alt="Angel List">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="c-footer-mailto">
+            <a href="mailto:mamun1214@gmail.com">mamun1214@gmail.com</a>
+        </div>
+    </footer>
 </main>
 <footer></footer>
 </body>

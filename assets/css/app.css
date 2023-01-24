@@ -197,8 +197,8 @@ h2 {
   height: 19.99px;
 }
 
-a {
-  color: #0f5257;
+.mt-0 {
+  margin-top: 0 !important;
 }
 
 .mb-0 {
@@ -210,21 +210,21 @@ a {
 }
 
 .c-btn {
+  width: 175px;
+  height: 48px;
   color: #fff;
   display: inline-block;
-
-  /* border-bottom: 4px solid #000; */
   text-decoration: none;
-
-  /* text-transform: uppercase; */
+  font-style: normal;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  padding: 0.6em 1.6rem;
-  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding: 12px;
   transition: 0.2s all;
   background-color: #36b37f;
-  border-radius: 6px;
-  font-size: 21px;
+  border-radius: 4px;
+  border: 0;
 }
 
 .c-btn::before {
@@ -273,10 +273,10 @@ a {
 
 .section-title {
   font-weight: 700;
-  font-size: 43px;
+  font-size: 40px;
   line-height: 45px;
   color: #172b4d;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 .card-wrapper {
@@ -296,12 +296,12 @@ a {
 }
 
 .card-wrapper .tech-tags ul {
+  display: flex;
   list-style: none;
   padding-left: 0;
   text-align: center;
-  height: 32px;
-  width: auto;
-  margin-left: 19px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-wrapper .tech-tags li {
@@ -310,23 +310,6 @@ a {
   box-sizing: border-box;
   border-radius: 5px;
   background: #ebf0ee;
-  float: left;
-}
-
-.card-wrapper .tech-tags li:nth-child(1) {
-  width: 103px;
-}
-
-.card-wrapper .tech-tags li:nth-child(2) {
-  width: 45px;
-}
-
-.card-wrapper .tech-tags li:nth-child(3) {
-  width: 82px;
-}
-
-.card-wrapper .tech-tags li:nth-child(4) {
-  width: 51px;
 }
 
 .card-wrapper .tech-tags li a {
@@ -396,14 +379,28 @@ a {
   -moz-box-shadow: 3px 10px 45px -15px rgba(0, 0, 0, 0.6);
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 12px 20px;
+.contact-form {
+  margin-bottom: 24px;
+}
+
+.contact-form input {
+  width: 327px;
+  height: 48px;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
+  border: 1px solid #d0d9d4;
   font-size: 16px;
   margin-top: 1.3rem;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  border-radius: 4px;
+  border: 1px solid #60c095;
+  width: 327px;
+  height: 114px;
+  font-size: 16px;
+  margin-top: 1.3rem;
+  padding: 10px;
 }
 
 .work-card-title {
@@ -417,6 +414,28 @@ a {
 .about-text {
   font-size: 1.25rem;
   color: #42526e;
+}
+
+.c-footer {
+  text-align: center;
+  padding: 0.1em;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.c-footer > .social-icon {
+  margin-top: 0;
+}
+
+.c-footer > .social-icon > ul {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.c-footer-mailto {
+  width: auto;
+  height: 189px;
 }
 
 @media all and (min-width: 600px) {
