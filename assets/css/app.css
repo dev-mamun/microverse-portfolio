@@ -50,7 +50,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1.3rem;
+  height: 80px;
 }
 
 .navbar > .container {
@@ -128,6 +128,7 @@ h2 {
   height: 670px;
   text-align: center !important;
   padding-top: 6px;
+  margin-bottom: 20px;
 }
 
 .intro-heading {
@@ -287,7 +288,7 @@ h2 {
   width: auto;
   margin: 4px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 4px;
   background: #ebf0ee;
 }
 
@@ -295,7 +296,7 @@ h2 {
   display: block;
   padding: 6px 12px;
   text-decoration: none;
-  font-weight: 5006;
+  font-weight: 500;
   font-size: 0.72rem;
   color: #3a4a42;
 }
@@ -427,7 +428,6 @@ h2 {
 @media all and (min-width: 600px) {
   .c-posts__item {
     flex-basis: 50%;
-    padding-right: 5%;
   }
 
   .c-posts__item:first-child {
@@ -442,8 +442,68 @@ h2 {
 
   main {
     background: url("/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: contain;
-    background-position: -13.88px -10.38px;
+    background-size: 1012px 795px;
+    background-position: -101.88px -10.38px;
+  }
+
+  .navbar-welcome {
+    display: none !important;
+  }
+
+  .navbar-menu {
+    display: none !important;
+  }
+
+  .intro-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 58px;
+    line-height: 32px;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card-image-wrapper {
+    min-height: 170px;
+  }
+
+  .card-wrapper h2 {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .card-wrapper .tech-tags li:nth-child(1) {
+    width: 88px;
+  }
+
+  .card-wrapper .tech-tags li:nth-child(2) {
+    width: 35px;
+  }
+
+  .card-wrapper .tech-tags li:nth-child(3) {
+    width: 80px;
+  }
+
+  .card-wrapper .tech-tags li:nth-child(4) {
+    width: 40px;
+  }
+
+  .card-wrapper .tech-tags li a {
+    padding: 6px;
+    font-size: 0.72rem;
   }
 }
 
