@@ -463,13 +463,9 @@ h2 {
 }
 
 /** Start Media query **/
-@media screen and (min-width: 600px) {
-  .c-posts__item {
-    flex-basis: 50%;
-  }
-
-  .c-posts__item:first-child {
-    flex-basis: 100%;
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 600px;
   }
 }
 
