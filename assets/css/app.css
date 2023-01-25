@@ -467,6 +467,10 @@ h2 {
   .container {
     max-width: 600px;
   }
+
+  .c-form {
+    grid-template-columns: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
