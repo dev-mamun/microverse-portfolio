@@ -59,3 +59,7 @@ main {
 .order-3 {
   order: 3;
 }
+
+.f-12 {
+  font-size: 12px !important;
+}

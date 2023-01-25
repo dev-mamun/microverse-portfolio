@@ -187,22 +187,23 @@
     </section>
 
     <section id="about-me" class="c-posts">
-        <article class="c-posts__item">
-            <h2 class="section-title mb-0">About me</h2>
-            <p class="about-text">
-                I can help you build a product , feature or website Look through some of my work and experience! If you
-                like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-            </p>
-            <button type="button" class="c-btn">Get My Resume</button>
-        </article>
-        <article class="c-posts__item card-wrapper skill-main-wrapper">
-            <div class="skill-image-wrapper">
-                <div class="">
+        <div class="container">
+            <article class="c-posts__item">
+                <h2 class="section-title mb-0">About me</h2>
+                <p class="about-text">
+                    I can help you build a product , feature or website Look through some of my work and experience! If
+                    you
+                    like what you see and have a project you need coded,
+                    don’t hestiate to contact me.
+                </p>
+                <button type="button" class="c-btn">Get My Resume</button>
+            </article>
+        </div>
+        <div class="items">
+            <article class="c-posts__item card-wrapper skill-main-wrapper">
+                <div class="skill-image-wrapper">
                     <img src="assets/img/icon-languages.svg"/>
                 </div>
-            </div>
-            <div class="">
                 <h2 class="about-card-title">Language</h2>
                 <div class="skills">
                     <ul>
@@ -212,15 +213,11 @@
                         <li><a href="#">css</a></li>
                     </ul>
                 </div>
-            </div>
-        </article>
-        <article class="c-posts__item card-wrapper skill-main-wrapper">
-            <div class="skill-image-wrapper">
-                <div class="">
+            </article>
+            <article class="c-posts__item card-wrapper skill-main-wrapper">
+                <div class="skill-image-wrapper">
                     <img src="assets/img/icon-frameworks.svg"/>
                 </div>
-            </div>
-            <div class="">
                 <h2 class="about-card-title">Frameworks</h2>
                 <div class="skills">
                     <ul>
@@ -231,15 +228,11 @@
                         <li><a href="#">Selenium</a></li>
                     </ul>
                 </div>
-            </div>
-        </article>
-        <article class="c-posts__item card-wrapper skill-main-wrapper">
-            <div class="skill-image-wrapper">
-                <div class="">
+            </article>
+            <article class="c-posts__item card-wrapper skill-main-wrapper">
+                <div class="skill-image-wrapper">
                     <img src="assets/img/icon-skills.svg"/>
                 </div>
-            </div>
-            <div class="">
                 <h2 class="about-card-title">Skills</h2>
                 <div class="skills">
                     <ul>
@@ -250,27 +243,29 @@
                         <li><a href="#">Terminal</a></li>
                     </ul>
                 </div>
-            </div>
-        </article>
+            </article>
+        </div>
     </section>
 
     <section id="contact-frm" class="c-posts">
-        <article class="c-posts__item pb-0">
-            <h1 class="section-title mt-0">
-                I'm always interested in hearing about new projects, so if you'd like
-                to chat please get in touch.
-            </h1>
-            <form method="post" action="https://formspree.io/f/xpzewgrz">
-                <div class="contact-form">
-                    <input name="name" type="text" value="" placeholder="Full name" minlength="3" maxlength="30"
-                           required/>
-                    <input name="email" type="email" value="" placeholder="Email address" minlength="5" required/>
-                    <textarea name="message" rows="4" placeholder="Enter text here" minlength="1" maxlength="500"
-                              required></textarea>
-                </div>
-                <button type="submit" class="c-btn">Get in touch</button>
-            </form>
-        </article>
+        <div class="container">
+            <article class="c-posts__item pb-0 c-form">
+                <h1 class="section-title mt-0">
+                    I'm always interested in hearing about new projects, so if you'd like
+                    to chat please get in touch.
+                </h1>
+                <form method="post" action="https://formspree.io/f/xpzewgrz">
+                    <div class="contact-form">
+                        <input name="name" type="text" value="" placeholder="Full name" minlength="3" maxlength="30"
+                               required/>
+                        <input name="email" type="email" value="" placeholder="Email address" minlength="5" required/>
+                        <textarea name="message" rows="4" placeholder="Enter text here" minlength="1" maxlength="500"
+                                  required></textarea>
+                    </div>
+                    <button type="submit" class="c-btn">Get in touch</button>
+                </form>
+            </article>
+        </div>
     </section>
 
     <footer class="c-footer">
