@@ -42,10 +42,10 @@ input:valid {
   padding-bottom: 0 !important;
 }
 
-main {
+#intro {
   background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
-  background-size: 360.38px 602px;
-  background-position: 7.12px 44.62px;
+  background-size: cover;
+  background-position: center;
 }
 
 .order-1 {

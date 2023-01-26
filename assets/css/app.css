@@ -478,11 +478,11 @@ h2 {
     max-width: 768px;
   }
 
-  main {
+  /*main {
     background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: 1012px 795px;
-    background-position: -101.88px -10.38px;
-  }
+    background-size: cover;
+    background-position: center;
+  }*/
 
   .navbar {
     height: 80px;
@@ -589,11 +589,11 @@ h2 {
     max-width: 1024px;
   }
 
-  main {
+  /*main {
     background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: 1090px 829px;
-    background-position: -22.88px -0.38px;
-  }
+    background-size: cover;
+    background-position: center;
+  }*/
 
   .nav-menu-bar {
     display: block;
@@ -622,11 +622,11 @@ h2 {
     max-width: 1400px;
   }
 
-  main {
+  /*main {
     background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: contain;
-    background-position: 31.12px -50.38px;
-  }
+    background-size: cover;
+    background-position: center;
+  }*/
 
   .navbar-welcome {
     display: none !important;
