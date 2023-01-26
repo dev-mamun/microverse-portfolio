@@ -463,6 +463,12 @@ h2 {
 
 /** Start Media query **/
 @media screen and (max-width: 600px) {
+  #intro {
+    background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .container {
     max-width: 600px;
   }
