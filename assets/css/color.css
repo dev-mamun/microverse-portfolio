@@ -63,3 +63,8 @@ input:valid {
 .f-12 {
   font-size: 12px !important;
 }
+
+.left-bg-img,
+.right-bg-img {
+  display: none;
+}

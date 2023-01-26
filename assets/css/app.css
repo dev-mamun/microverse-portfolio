@@ -258,7 +258,7 @@ h2 {
 }
 
 .c-btn:active {
-  background-color: #008552;
+  background: #008552;
 }
 
 .c-btn:hover::before {
@@ -569,6 +569,50 @@ h2 {
 
   .c-footer-mailto {
     display: none;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-content {
+    z-index: 999;
+  }
+
+  .left-bg-img {
+    display: block;
+    z-index: 99;
+    width: 20%;
+    position: relative;
+    left: -8%;
+    top: 68%;
+  }
+
+  .left-bg-img > img {
+    width: 100%;
+    position: relative;
+    top: 385%;
+    bottom: 0%;
+  }
+
+  .right-bg-img {
+    display: block;
+    z-index: 99;
+    position: relative;
+    width: 20%;
+    height: auto;
+    right: -85%;
+    top: -204.91%;
+  }
+
+  .right-bg-img > img {
+    width: 100%;
+    position: relative;
+    left: 10.18%;
+    top: -204.91%;
+    bottom: 0%;
   }
 }
 
