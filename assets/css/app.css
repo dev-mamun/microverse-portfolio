@@ -97,6 +97,29 @@ h2 {
   flex-grow: 0;
 }
 
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-welcome > strong:hover {
+  animation: rotate 0.5s linear 1s;
+}
+
 .navbar-menu {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
