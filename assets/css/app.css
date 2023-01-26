@@ -348,7 +348,6 @@ h2 {
 
 .skill-main-wrapper {
   min-height: 315px;
-  min-width: 240px;
 }
 
 .card-wrapper .skills ul {
@@ -478,12 +477,6 @@ h2 {
     max-width: 768px;
   }
 
-  /*main {
-    background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }*/
-
   .navbar {
     height: 80px;
   }
@@ -520,11 +513,6 @@ h2 {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
-    padding: 10px;
-  }
-
-  .c-posts {
-    padding: 0;
   }
 
   .card-image-wrapper {
@@ -589,12 +577,6 @@ h2 {
     max-width: 1024px;
   }
 
-  /*main {
-    background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }*/
-
   .nav-menu-bar {
     display: block;
     width: 100%;
@@ -621,12 +603,6 @@ h2 {
   .container {
     max-width: 1400px;
   }
-
-  /*main {
-    background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }*/
 
   .navbar-welcome {
     display: none !important;
