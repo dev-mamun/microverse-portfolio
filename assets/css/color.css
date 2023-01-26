@@ -65,6 +65,7 @@ input:valid {
 }
 
 .left-bg-img,
-.right-bg-img {
+.right-bg-img,
+.c-img {
   display: none;
 }

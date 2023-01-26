@@ -614,6 +614,52 @@ h2 {
     top: -204.91%;
     bottom: 0%;
   }
+
+  .c-img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 157px;
+  }
+
+  .cfrm-bg-img-1 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    left: -16%;
+  }
+
+  .cfrm-bg-img-1 > img {
+    width: 100%;
+    position: relative;
+    top: 0%;
+  }
+
+  .cfrm-bg-img-2 {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    left: -80%;
+  }
+
+  .cfrm-bg-img-2 > img {
+    width: 100%;
+    position: relative;
+    top: 36%;
+  }
+
+  .cfrm-bg-img-3 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    right: -200px;
+  }
+
+  .cfrm-bg-img-3 > img {
+    width: 100%;
+    position: relative;
+    top: 0%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -641,6 +687,52 @@ h2 {
     flex-direction: column;
     justify-content: left;
   }
+
+  .c-img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 157px;
+  }
+
+  .cfrm-bg-img-1 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    left: -16%;
+  }
+
+  .cfrm-bg-img-1 > img {
+    width: 100%;
+    position: relative;
+    top: 0%;
+  }
+
+  .cfrm-bg-img-2 {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    left: -80%;
+  }
+
+  .cfrm-bg-img-2 > img {
+    width: 100%;
+    position: relative;
+    top: 36%;
+  }
+
+  .cfrm-bg-img-3 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    right: -200px;
+  }
+
+  .cfrm-bg-img-3 > img {
+    width: 100%;
+    position: relative;
+    top: 0%;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -654,5 +746,51 @@ h2 {
 
   .navbar-menu {
     display: none !important;
+  }
+
+  .c-img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 157px;
+  }
+
+  .cfrm-bg-img-1 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    left: -16%;
+  }
+
+  .cfrm-bg-img-1 > img {
+    width: 100%;
+    position: relative;
+    top: 0%;
+  }
+
+  .cfrm-bg-img-2 {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    left: -80%;
+  }
+
+  .cfrm-bg-img-2 > img {
+    width: 100%;
+    position: relative;
+    top: 36%;
+  }
+
+  .cfrm-bg-img-3 {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    right: -200px;
+  }
+
+  .cfrm-bg-img-3 > img {
+    width: 100%;
+    position: relative;
+    top: 0%;
   }
 }
