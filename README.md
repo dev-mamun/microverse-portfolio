@@ -51,10 +51,11 @@
 
 > Describe between 1-3 key features of the application.
 
-- [ ] Headr with hamburger
-- [ ] Multiple color in intro
-- [ ] Work List
-- [ ] About Section
+- [ ] Intro
+- [ ] Recent Work
+- [ ] About Me
+- [ ] Contact Form
+- [ ] Social Link
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +144,6 @@ project.
 > Will add following features on future.
 
 - [ ] **Menu**
-- [ ] **Contact Form**
 - [ ] **Project Details**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
