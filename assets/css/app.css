@@ -228,13 +228,13 @@ h2 {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  padding: 10px;
+  padding: 12px;
   transition: 0.2s all;
-  background-color: #36b37f;
+  background: #008552;
   border-radius: 4px;
   border: 0;
 }
@@ -253,12 +253,12 @@ h2 {
 .c-btn:hover {
   color: #fff;
   border-color: #36b37f;
-  background: #36b37f !important;
+  background: #c5e9da !important;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .c-btn:active {
-  background: #008552;
+  background: #ebf0ee;
 }
 
 .c-btn:hover::before {
@@ -365,15 +365,20 @@ h2 {
   box-sizing: border-box;
   border-radius: 8px;
   background: #fff;
+  padding: 8px;
+  font-weight: 600;
+  color: #318d66;
+  font-size: 12px;
 }
 
 .card-wrapper .skills li a {
   display: block;
-  padding: 0 5px;
   text-decoration: none;
   font-weight: 600;
-  color: #36b37e;
-  font-size: 10px;
+  color: #1e6044;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .skill-icon {
