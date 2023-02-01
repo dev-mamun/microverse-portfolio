@@ -270,10 +270,17 @@
             </h1>
             <form method="post" action="https://formspree.io/f/xpzewgrz">
                 <div class="contact-form">
-                    <input name="name" type="text" value="" placeholder="Full name" minlength="3" maxlength="30"
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" value="" placeholder="Full name" minlength="3"
+                           maxlength="30"
                            required/>
-                    <input name="email" type="email" value="" placeholder="Email address" minlength="5" required/>
-                    <textarea name="message" rows="4" placeholder="Enter text here" minlength="1" maxlength="500"
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" value="" placeholder="Email address" minlength="5"
+                           required/>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter text here" minlength="1"
+                              maxlength="500"
                               required></textarea>
                 </div>
                 <button type="submit" class="c-btn">Get in touch</button>
