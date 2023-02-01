@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+main {
+  padding: 0 10px;
+}
+
 .bg-white {
   opacity: 1;
   background-color: rgba(255, 255, 255, 1) !important;
@@ -67,5 +71,13 @@ input:valid {
 .left-bg-img,
 .right-bg-img,
 .c-img {
+  display: none;
+}
+
+section {
+  margin-bottom: 30px !important;
+}
+
+label {
   display: none;
 }

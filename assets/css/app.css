@@ -12,8 +12,6 @@ body {
   margin: 0;
   font-family: "Inter, Helvetica Neue", sans-serif;
   color: black;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 header {
@@ -157,7 +155,6 @@ h2 {
 }
 
 .intro {
-  height: 735px;
   text-align: center !important;
   padding-top: 6px;
   margin-bottom: 20px;
@@ -228,13 +225,13 @@ h2 {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  padding: 10px;
+  padding: 12px;
   transition: 0.2s all;
-  background-color: #36b37f;
+  background: #008552;
   border-radius: 4px;
   border: 0;
 }
@@ -253,12 +250,12 @@ h2 {
 .c-btn:hover {
   color: #fff;
   border-color: #36b37f;
-  background: #36b37f !important;
+  background: #c5e9da !important;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .c-btn:active {
-  background: #008552;
+  background: #ebf0ee;
 }
 
 .c-btn:hover::before {
@@ -268,8 +265,8 @@ h2 {
 .c-posts {
   display: grid;
   flex-wrap: wrap;
-  align-items: top;
-  padding: 5%;
+  align-items: baseline;
+  padding: 1%;
   text-align: center;
 }
 
@@ -288,6 +285,9 @@ h2 {
   line-height: 45px;
   color: #172b4d;
   padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card-wrapper {
@@ -365,15 +365,20 @@ h2 {
   box-sizing: border-box;
   border-radius: 8px;
   background: #fff;
+  padding: 8px;
+  font-weight: 600;
+  color: #318d66;
+  font-size: 12px;
 }
 
 .card-wrapper .skills li a {
   display: block;
-  padding: 0 5px;
   text-decoration: none;
   font-weight: 600;
-  color: #36b37e;
-  font-size: 10px;
+  color: #1e6044;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .skill-icon {
@@ -392,8 +397,8 @@ h2 {
 
 .c-form {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
+  grid-template-columns: 60% 36%;
+  gap: 40px;
 }
 
 .contact-form {
@@ -401,7 +406,7 @@ h2 {
 }
 
 .contact-form input {
-  width: 327px;
+  width: 100%;
   height: 48px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
@@ -413,7 +418,7 @@ h2 {
 .contact-form textarea {
   border-radius: 4px;
   border: 1px solid #60c095;
-  width: 327px;
+  width: 100%;
   height: 114px;
   font-size: 16px;
   margin-top: 1.3rem;
@@ -459,13 +464,22 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 20px;
+}
+
+#down-arrow img {
+  cursor: pointer;
 }
 
 /** Start Media query **/
 @media screen and (max-width: 600px) {
+  main {
+    padding: 0;
+  }
+
   #intro {
     background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
   }
 
@@ -475,6 +489,18 @@ h2 {
 
   .c-form {
     grid-template-columns: auto;
+  }
+
+  .c-posts {
+    padding: 5%;
+  }
+
+  .contact-form input {
+    width: 290px;
+  }
+
+  .contact-form textarea {
+    width: 290px;
   }
 }
 
@@ -537,20 +563,6 @@ h2 {
   .card-wrapper .tech-tags li a {
     padding: 0 6px;
     font-size: 0.6rem;
-  }
-
-  .c-form > h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    grid-column: 1 / span 3;
-    grid-row: 1;
-  }
-
-  .c-form > form {
-    grid-column: 4 /span 1;
-    grid-row: 1;
   }
 
   .c-form .c-btn {
@@ -624,8 +636,8 @@ h2 {
   .c-img {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: 217px;
     width: 100%;
-    height: 157px;
   }
 
   .cfrm-bg-img-1 {
@@ -678,16 +690,6 @@ h2 {
     width: 100%;
   }
 
-  .c-form > h1 {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-  }
-
-  .c-form > form {
-    grid-column: 4 /span 1;
-    grid-row: 1;
-  }
-
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -697,8 +699,8 @@ h2 {
   .c-img {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: 217px;
     width: 100%;
-    height: 157px;
   }
 
   .cfrm-bg-img-1 {
@@ -757,21 +759,22 @@ h2 {
   .c-img {
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 100%;
-    height: 157px;
+    grid-template-rows: 223px;
   }
 
   .cfrm-bg-img-1 {
     display: inline-block;
     width: 40%;
     position: relative;
-    left: -16%;
+    left: -3%;
+    height: 260px;
+    top: -3%;
   }
 
   .cfrm-bg-img-1 > img {
     width: 100%;
     position: relative;
-    top: 0%;
+    top: -32%;
   }
 
   .cfrm-bg-img-2 {
@@ -779,6 +782,8 @@ h2 {
     width: 30%;
     position: relative;
     left: -80%;
+    top: 4%;
+    height: 164px;
   }
 
   .cfrm-bg-img-2 > img {
@@ -789,14 +794,56 @@ h2 {
 
   .cfrm-bg-img-3 {
     display: inline-block;
-    width: 40%;
+    width: 35%;
     position: relative;
-    right: -200px;
+    right: -68%;
+    top: -53%;
+    height: 431px;
   }
 
   .cfrm-bg-img-3 > img {
     width: 100%;
     position: relative;
     top: 0%;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+  }
+
+  #about-me .items {
+    grid-template-columns: auto auto auto;
+  }
+
+  .right-bg-img > img {
+    left: 19.18%;
+    top: -120.91%;
+  }
+
+  .left-bg-img > img {
+    top: 190%;
+    left: -9%;
+  }
+
+  .about-text {
+    width: 95%;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  #intro {
+    height: 750px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    padding: 0 300px;
   }
 }
