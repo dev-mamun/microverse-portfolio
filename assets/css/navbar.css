@@ -1,0 +1,195 @@
+/**
+ * Project: portfolio
+ * File: navbar.css
+ * Created: 05/02/23
+ * Author: Abdullah Al Mamun <mamun1214@gmail.com>
+ */
+
+/* .navbar {
+    position       : relative;
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    justify-content: space-between;
+    height         : 50px;
+}
+
+.navbar>.container {
+    display        : flex;
+    flex-wrap      : inherit;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.nav-menu-bar {
+    display: none;
+}
+
+.navbar-collapse {
+    flex-basis     : auto;
+    flex-grow      : 1;
+    align-items    : center;
+    min-width      : 768px;
+    justify-content: center;
+    display        : flex;
+}
+
+.navbar-nav {
+    display       : flex;
+    flex-direction: row;
+    padding-left  : 0;
+    margin-bottom : 0;
+    margin-top    : 0;
+    list-style    : none;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    height         : 2.5rem;
+    position       : relative;
+    color          : #172b4d;
+    display        : block;
+    padding        : 0 0.5rem;
+    font-size      : 14px;
+    text-decoration: none;
+}
+
+.navbar-welcome {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px 12px;
+}
+
+.navbar-welcome > strong {
+  width: 105px;
+  height: 28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #28352f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.navbar-menu {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.55);
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-menu-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/icon/menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
+
+.navbar {
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 18px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.nav-branding {
+  font-size: 1.25rem;
+  display: none;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-branding {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    align-items: start;
+    min-height: 80%;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    padding-left: 10%;
+    padding-top: 15%;
+  }
+}

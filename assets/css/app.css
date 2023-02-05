@@ -1,12 +1,19 @@
 /**
  * Project: portfolio
- * File: df.css
+ * File: app.css
  * Created: 1/12/23
  * Author: Abdullah Al Mamun <mamun1214@gmail.com>
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import "color.css";
+@import "navbar.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -30,6 +37,10 @@ h2 {
   margin-top: 0;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -38,108 +49,12 @@ h2 {
   padding-right: calc(1.5rem * 0.5);
 }
 
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-}
-
-.navbar > .container {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-menu-bar {
-  display: none;
-}
-
-.navbar-collapse {
-  flex-basis: auto;
-  flex-grow: 1;
-  align-items: center;
-  min-width: 768px;
-  justify-content: center;
-  display: flex;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  list-style: none;
-}
-
-.nav-item {
-  margin: 0;
-}
-
-.nav-link {
-  height: 2.5rem;
-  position: relative;
-  color: #172b4d;
-  display: block;
-  padding: 0 0.5rem;
-  font-size: 14px;
-  text-decoration: none;
-}
-
 .align-center {
   align-items: center !important;
 }
 
 .d-flex {
   display: flex !important;
-}
-
-.navbar-welcome {
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  text-decoration: none;
-  white-space: nowrap;
-  padding: 10px 12px;
-}
-
-.navbar-welcome > strong {
-  width: 105px;
-  height: 28px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #28352f;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.navbar-menu {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.55);
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  transition: box-shadow 0.15s ease-in-out;
-}
-
-.navbar-menu-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  background-image: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/icon/menu.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #logo-placeholder {
@@ -478,7 +393,8 @@ h2 {
   }
 
   #intro {
-    background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg") no-repeat;
+    background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/header-illsutration-mobile.svg");
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
@@ -507,23 +423,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-  }
-
-  .navbar {
-    height: 80px;
-  }
-
-  .navbar-welcome {
-    display: none !important;
-  }
-
-  .navbar-menu {
-    display: none !important;
-  }
-
-  .nav-menu-bar {
-    display: block;
-    width: 100%;
   }
 
   .intro-heading {
@@ -746,14 +645,6 @@ h2 {
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1400px;
-  }
-
-  .navbar-welcome {
-    display: none !important;
-  }
-
-  .navbar-menu {
-    display: none !important;
   }
 
   .c-img {

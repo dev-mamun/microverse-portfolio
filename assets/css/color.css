@@ -24,6 +24,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+  text-decoration: none;
 }
 
 input:invalid {
@@ -47,7 +48,8 @@ input:valid {
 }
 
 #intro {
-  background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg") no-repeat;
+  background: url("https://dev-mamun.github.io/microverse-portfolio/assets/img/Header-llustration-desktop.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
