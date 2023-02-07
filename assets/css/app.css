@@ -205,6 +205,7 @@ li {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .card-wrapper {
@@ -238,6 +239,11 @@ li {
   box-sizing: border-box;
   border-radius: 4px;
   background: #ebf0ee;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  display: block;
+  font-weight: 500;
+  color: #3a4a42;
 }
 
 .card-wrapper .tech-tags li a {
