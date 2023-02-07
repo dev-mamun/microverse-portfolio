@@ -149,6 +149,8 @@ li {
   background: #008552;
   border-radius: 4px;
   border: 0;
+  cursor: pointer;
+  margin: 15px 0;
 }
 
 .c-btn::before {
