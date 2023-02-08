@@ -1,0 +1,243 @@
+/**
+ * Project: microverse-portfolio
+ * File: popup.css
+ * Created: 2/8/23
+ * Author: Abdullah Al Mamun <mamun1214@gmail.com>
+ */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  gap: 12px;
+  width: auto;
+  min-height: 855px;
+  background-color: #fff;
+  margin: 10px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  position: relative;
+  top: -20px;
+}
+
+/* The Close Button */
+.close {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background: #ebecf0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-img > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+  display: none;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.modal-content .tech-tags {
+  width: 100%;
+}
+
+.modal-content .tech-tags ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.modal-content .tech-tags li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  margin: 3px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #ebf0ee;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3a4a42;
+  letter-spacing: 0.03em;
+}
+
+.project-link a {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.project-link a span {
+  font-size: 15px;
+}
+
+.title-link {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title-link a {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 50%;
+  float: left;
+  margin-right: 9px;
+}
+
+.title-link a:nth-child(1) {
+  width: 42%;
+}
+
+.title-link a:nth-child(2) {
+  width: 50%;
+}
+
+.title-link a span {
+  font-size: 13px;
+}
+
+.modal-content .tech-tags li a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.72rem;
+  color: #3a4a42;
+}
+
+.project-link {
+  width: 100%;
+  display: none;
+}
+
+.project-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 30px;
+}
+
+.title-link div:nth-child(1) {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 60%;
+  height: auto;
+}
+
+.title-link div:nth-child(2) {
+  width: 40%;
+}
+
+@media (max-width: 700px) {
+  .title-link {
+    display: none;
+  }
+
+  .project-title {
+    display: block;
+  }
+
+  .project-desc {
+    margin-bottom: 0;
+  }
+
+  .project-link {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  .overlay {
+    display: block;
+    top: 10px !important;
+    right: 10px !important;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .mclose {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+  }
+}

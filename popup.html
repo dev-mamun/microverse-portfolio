@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+<button type="button" id="myBtn">Open Modal</button>
+<!-- The Modal -->
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="project-img">
+            <span class="close">X</span>
+            <img src="assets/img/SnapshootPortfolio.svg">
+            <div class="overlay">
+                <span class="mclose">X</span>
+            </div>
+        </div>
+        <div class="title-link">
+            <div>
+                Keeping track of hundreds of components
+            </div>
+            <div>
+                <a id="live" type="button" class="c-btn"><span>See Live</span>
+                    <img src="assets/img/IconExport.svg">
+                </a>
+                <a id="source" type="button" class="c-btn"><span>See Source</span>
+                    <img src="assets/img/Icon-GitHub.svg">
+                </a>
+            </div>
+        </div>
+        <div class="project-title">
+            Keeping track of hundreds of components
+        </div>
+        <div class="tech-tags">
+            <ul>
+                <li>Ruby on Rails</li>
+                <li>Html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul>
+        </div>
+        <div class="project-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it 1960s with the relea
+        </div>
+        <div class="project-link">
+            <a type="button" class="c-btn" href="#" target="_blank" rel="noopener noreferrer"><span>See Live</span>
+                <img src="assets/img/IconExport.svg">
+            </a>
+            <a type="button" class="c-btn" href="#" target="_blank" rel="noopener noreferrer"><span>See Source</span>
+                <img src="assets/img/Icon-GitHub.svg">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var close = document.getElementsByClassName("close")[0];
+  var mclose = document.getElementsByClassName("mclose")[0];
+  // When the user clicks the button, open the modal
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  close.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  mclose.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

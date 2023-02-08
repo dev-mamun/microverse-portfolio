@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import "color.css";
 @import "navbar.css";
+@import "popup.css";
 
 * {
   padding: 0;
@@ -259,6 +260,7 @@ li {
   padding: 0.5rem;
   border-radius: 5px;
   background: #fff;
+  min-height: 240px;
 }
 
 .card-image-wrapper {
@@ -708,7 +710,7 @@ li {
 
   .items {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 10px;
   }
 
@@ -744,5 +746,12 @@ li {
 
   .intro-text {
     padding: 0 300px;
+  }
+
+  .modal-content {
+    width: 70rem;
+    margin: auto;
+    align-items: flex-start;
+    padding: 20px;
   }
 }
