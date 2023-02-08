@@ -45,10 +45,10 @@ function createPopUp(item, index) {
   const html = `<div id="project${index}" class="modal">
             <div class="modal-content">
                 <div class="project-img">
-                    <span class="close">X</span>
+                    <span id="cid${index}" class="close">X</span>
                     <img src="${item.image.featured}">
                     <div class="overlay">
-                        <span class="mclose">X</span>
+                        <span id="mid${index}" class="mclose">X</span>
                     </div>
                 </div>
                 <div class="title-link">
@@ -137,9 +137,6 @@ document.onreadystatechange = () => {
       parent.appendChild(article);
     });
     // End of project loop
-    // Get the <span> element that closes the modal
-    const close = document.getElementsByClassName('close')[0];
-    const mclose = document.getElementsByClassName('mclose')[0];
     const pdetails = document.querySelectorAll('.pdetails');
     pdetails.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -150,16 +147,25 @@ document.onreadystatechange = () => {
         html.classList.add('disable-scroll');
       });
     });
-    close.addEventListener('click', () => {
-      modal.style.display = 'none';
-      body.classList.remove('disable-scroll');
-      html.classList.remove('disable-scroll');
+
+    const close = document.querySelectorAll('.close');
+    close.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        body.classList.remove('disable-scroll');
+        html.classList.remove('disable-scroll');
+      });
     });
-    mclose.addEventListener('click', () => {
-      modal.style.display = 'none';
-      body.classList.remove('disable-scroll');
-      html.classList.remove('disable-scroll');
+
+    const mclose = document.querySelectorAll('.mclose');
+    mclose.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        body.classList.remove('disable-scroll');
+        html.classList.remove('disable-scroll');
+      });
     });
+
     window.addEventListener('click', (event) => {
       if (event.target === modal) {
         modal.style.display = 'none';
