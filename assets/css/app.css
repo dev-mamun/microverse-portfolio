@@ -404,6 +404,13 @@ input:valid {
   cursor: pointer;
 }
 
+.error {
+  color: red;
+  width: 330px;
+  text-align: left;
+  display: none;
+}
+
 /** Start Media query **/
 @media screen and (max-width: 600px) {
   main {

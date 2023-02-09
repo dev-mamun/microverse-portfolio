@@ -93,6 +93,49 @@ function createPopUp(item, index) {
   });
 }
 
+function showError(input) {
+  const error = document.getElementById('error');
+  error.style.display = 'none';
+  switch (input.id) {
+    case 'name':
+      error.style.display = 'block';
+      error.textContent = 'Please enter your name';
+      break;
+    case 'email':
+      error.style.display = 'block';
+      error.textContent = 'Email should only contain lowercase letters. e.g. mamun@example.com';
+      break;
+    case 'message':
+      error.style.display = 'block';
+      error.textContent = 'Please enter your message';
+      break;
+    default:
+      error.style.display = 'none';
+  }
+  return false;
+}
+
+function hasValue(input) {
+  if (input.value.trim() === '') {
+    return showError(input);
+  }
+  return true;
+}
+
+function validateEmail(input) {
+  // check if the value is not empty
+  if (!hasValue(input)) {
+    return false;
+  }
+  // validate email format
+  const emailRegex = /^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+$/;
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(input);
+  }
+  return true;
+}
+
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
     hamburger.addEventListener('click', () => {
@@ -175,18 +218,29 @@ document.onreadystatechange = () => {
       }
     });
 
-    let email = document.getElementById('email');
+    const email = document.getElementById('email');
     email.addEventListener('invalid', (event) => {
       event.preventDefault();
-      console.log(event.target.validity.valid);
       if (!event.target.validity.valid) {
-        console.log(event.target);
-        event.target.setCustomValidity('Email should only contain lowercase letters. e.g. mamun@example.com')
+        showError(email);
+        event.target.focus();
+        return false;
+      }
+      return true;
+    });
+
+    const form = document.getElementById('cfrom');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const error = document.getElementById('error');
+      error.textContent = '';
+      error.style.display = 'none';
+      const name = hasValue(form.elements.name);
+      const email = validateEmail(form.elements.email);
+      const message = hasValue(form.elements.message);
+      if (name && email && message) {
+        form.submit();
       }
     });
-    /*email.oninvalid = function(event) {
-      console.log(event);
-      event.target.setCustomValidity('Email should only contain lowercase letters. e.g. mamun@example.com');
-    }*/
   }
 };

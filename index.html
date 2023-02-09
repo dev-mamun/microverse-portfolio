@@ -164,20 +164,20 @@
         <article class="c-posts__item pb-0 c-form">
             <h1 class="section-title mt-0"> I'm always interested in hearing about new projects, so if you'd
                 like to chat please get in touch. </h1>
-            <form method="post" action="https://formspree.io/f/xpzewgrz">
+            <form id="cfrom" method="post" action="https://formspree.io/f/xpzewgrz">
                 <div class="contact-form">
                     <label for="name">Full Name</label>
                     <input id="name" name="name" type="text" value="" placeholder="Full name" minlength="3"
                            maxlength="30" required/>
                     <label for="email">Email Address</label>
                     <input id="email" name="email" type="email" value="" placeholder="Email address"
-                           minlength="5" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+$" required/>
+                           minlength="5" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+$"  required/>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="4" placeholder="Enter text here" minlength="1"
                               maxlength="500" required></textarea>
                 </div>
                 <button type="submit" class="c-btn">Get in touch</button>
-                <div class="error">Email should only contain lowercase letters: e.g. mamun@example.com</div>
+                <div id="error" class="error"></div>
             </form>
         </article>
         <div class="c-img">

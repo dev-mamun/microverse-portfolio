@@ -198,12 +198,6 @@
   width: 40%;
 }
 
-.error{
-  color: red;
-  width: 330px;
-  text-align: left;
-}
-
 @media (max-width: 700px) {
   .title-link {
     display: none;
