@@ -68,12 +68,7 @@ function createPopUp(item, index) {
                     ${item.name}
                 </div>
                 <div class="tech-tags">
-                    <ul>
-                        <li>Ruby on Rails</li>
-                        <li>Html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
+                    <ul id="techs${index}"></ul>
                 </div>
                 <div class="project-desc">
                     ${item.description}
@@ -90,6 +85,12 @@ function createPopUp(item, index) {
         </div>`;
   const parent = document.getElementById('project-modal');
   parent.insertAdjacentHTML('beforeend', html);
+  const list = document.getElementById(`techs${index}`);
+  item.technologies.forEach((item) => {
+    const li = document.createElement('li');
+    li.innerText = item;
+    list.appendChild(li);
+  });
 }
 
 document.onreadystatechange = () => {
