@@ -326,6 +326,14 @@ li {
   gap: 40px;
 }
 
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: #ccc;
+}
+
 .contact-form {
   margin-bottom: 24px;
 }
@@ -394,6 +402,13 @@ li {
 
 #down-arrow img {
   cursor: pointer;
+}
+
+.error {
+  color: red;
+  width: 330px;
+  text-align: left;
+  display: none;
 }
 
 /** Start Media query **/
