@@ -85,7 +85,7 @@ function createPopUp(item, index) {
         </div>`;
   const parent = document.getElementById('project-modal');
   parent.insertAdjacentHTML('beforeend', html);
-  const list = document.getElementById('techs'+index);
+  const list = document.getElementById(`techs${index}`);
   item.technologies.forEach((item) => {
     const li = document.createElement('li');
     li.innerText = item;
