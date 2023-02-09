@@ -326,6 +326,14 @@ li {
   gap: 40px;
 }
 
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: #ccc;
+}
+
 .contact-form {
   margin-bottom: 24px;
 }

@@ -171,12 +171,13 @@
                            maxlength="30" required/>
                     <label for="email">Email Address</label>
                     <input id="email" name="email" type="email" value="" placeholder="Email address"
-                           minlength="5" required/>
+                           minlength="5" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+$" required/>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="4" placeholder="Enter text here" minlength="1"
                               maxlength="500" required></textarea>
                 </div>
                 <button type="submit" class="c-btn">Get in touch</button>
+                <div class="error">Email should only contain lowercase letters. e.g. mamun@example.com</div>
             </form>
         </article>
         <div class="c-img">

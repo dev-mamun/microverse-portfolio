@@ -174,5 +174,19 @@ document.onreadystatechange = () => {
         html.classList.remove('disable-scroll');
       }
     });
+
+    let email = document.getElementById('email');
+    email.addEventListener('invalid', (event) => {
+      event.preventDefault();
+      console.log(event.target.validity.valid);
+      if (!event.target.validity.valid) {
+        console.log(event.target);
+        event.target.setCustomValidity('Email should only contain lowercase letters. e.g. mamun@example.com')
+      }
+    });
+    /*email.oninvalid = function(event) {
+      console.log(event);
+      event.target.setCustomValidity('Email should only contain lowercase letters. e.g. mamun@example.com');
+    }*/
   }
 };
