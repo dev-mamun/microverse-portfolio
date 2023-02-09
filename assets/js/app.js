@@ -131,6 +131,7 @@ function validateEmail(input) {
   const emailRegex = /^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+$/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
+    input.value = email.toLowerCase();
     return showError(input);
   }
   return true;
@@ -222,6 +223,7 @@ document.onreadystatechange = () => {
     email.addEventListener('invalid', (event) => {
       event.preventDefault();
       if (!event.target.validity.valid) {
+        event.target.value = event.target.value.toLowerCase();
         showError(email);
         event.target.focus();
         return false;
