@@ -2,6 +2,10 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const html = document.querySelector('html');
 const body = document.querySelector('body');
+const key = 'cdata';
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 const projects = [{
   name: 'Multi-Post Stories Gain + Glorys',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
@@ -219,7 +223,6 @@ document.onreadystatechange = () => {
       }
     });
 
-    const email = document.getElementById('email');
     email.addEventListener('invalid', (event) => {
       event.preventDefault();
       if (!event.target.validity.valid) {
@@ -241,7 +244,52 @@ document.onreadystatechange = () => {
       const email = validateEmail(form.elements.email);
       const message = hasValue(form.elements.message);
       if (name && email && message) {
+        const data = {
+          name: form.elements.name.value,
+          email: form.elements.email.value,
+          message: form.elements.message.value,
+        };
+        window.localStorage.setItem(key, JSON.stringify(data));
         form.submit();
+      }
+    });
+    // Load save data from local storage
+    let $data = window.localStorage.getItem(key);
+    if (!Object.is($data, null)) {
+      $data = JSON.parse($data);
+      if (Object.prototype.hasOwnProperty.call($data, 'name')) {
+        name.value = $data.name;
+      }
+      if (Object.prototype.hasOwnProperty.call($data, 'email')) {
+        email.value = $data.email;
+      }
+      if (Object.prototype.hasOwnProperty.call($data, 'message')) {
+        message.value = $data.message;
+      }
+    }
+
+    name.addEventListener('change', (event) => {
+      if (Object.is($data, null)) {
+        window.localStorage.setItem(key, JSON.stringify({ name: event.target.value }));
+      } else {
+        $data.name = event.target.value;
+        window.localStorage.setItem(key, JSON.stringify($data));
+      }
+    });
+    email.addEventListener('change', (event) => {
+      if (Object.is($data, null)) {
+        window.localStorage.setItem(key, JSON.stringify({ email: event.target.value }));
+      } else {
+        $data.email = event.target.value;
+        window.localStorage.setItem(key, JSON.stringify($data));
+      }
+    });
+    message.addEventListener('change', (event) => {
+      if (Object.is($data, null)) {
+        window.localStorage.setItem(key, JSON.stringify({ message: event.target.value }));
+      } else {
+        $data.message = event.target.value;
+        window.localStorage.setItem(key, JSON.stringify($data));
       }
     });
   }
